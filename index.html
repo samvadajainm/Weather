@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Weather Report</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body onload="displayWeather('1277333');displayFutureWeather('1277333')">
+        <div class="wrapper">
+            <div class="container">
+                    <div class="topnav">
+                            <div id="myLinks">
+                              <a href="#" id="1277333" onclick="displayWeather(this.id);displayFutureWeather(this.id)">Bangalore</a>
+                              <a href="#" id="3582383" onclick="displayWeather(this.id);displayFutureWeather(this.id)">Chicago</a>
+                              <a href="#" id="5128638" onclick="displayWeather(this.id);displayFutureWeather(this.id)">NewYork</a>
+                              <a href="#" id="292968" onclick="displayWeather(this.id);displayFutureWeather(this.id)">Abudabi</a>
+                              <a href="#" id="2759794" onclick="displayWeather(this.id);displayFutureWeather(this.id)">Amsterdam</a>
+                            </div>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                              <i class="fa fa-bars"></i>
+                            </a>
+                <div class="grid-container">
+                    <aside class="main-section">
+                        <h2 id="weeklyheader"></h2>
+                        <img id="weatherIcon" class="weathericon"/>
+                        <h3 id="temp"></h3>
+                    </aside>
+                    <div class="main">
+                        <h2 id="greetings"></h2>
+                        <h1 id="cityName"></h1>
+
+                    </div>
+                </div>
+                <div class="lower-section">
+                    <div class="lower-section__1">
+                            <p class="futureweeklyheader"></p>
+                            <img class="futureweatherIcon"/>
+                            <p class="futuretemp"></p>
+                    </div>
+                    <div class="lower-section__1">
+                            <p class="futureweeklyheader"></p>
+                            <img class="futureweatherIcon"/>
+                            <p class="futuretemp"></p>
+                    </div>
+                    <div class="lower-section__1">
+                            <p class="futureweeklyheader"></p>
+                            <img class="futureweatherIcon"/>
+                            <p class="futuretemp"></p>
+                    </div>
+                    <div class="lower-section__1">
+                            <p class="futureweeklyheader"></p>
+                            <img class="futureweatherIcon"/>
+                            <p class="futuretemp"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
